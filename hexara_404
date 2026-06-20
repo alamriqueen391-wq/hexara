@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HEXARA</title>
+
+<style>
+    body {
+        margin: 0;
+        background: radial-gradient(circle at top, #0a0f1f, #000000);
+        font-family: "Courier New", monospace;
+        color: #00ffe1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    body::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image:
+            linear-gradient(rgba(0,255,225,0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0,255,225,0.05) 1px, transparent 1px);
+        background-size: 40px 40px;
+        z-index: 0;
+    }
+
+    .logo {
+        font-size: 70px;
+        font-weight: bold;
+        color: #00ffe1;
+        text-shadow: 0 0 10px #00ffe1, 0 0 25px #00ffe1;
+        border: 2px solid #00ffe1;
+        padding: 10px 40px;
+        margin-bottom: 30px;
+        z-index: 1;
+    }
+
+    .box {
+        width: 340px;
+        padding: 25px;
+        background: rgba(10, 15, 31, 0.9);
+        border: 1px solid #ff00ff;
+        box-shadow: 0 0 20px #ff00ff33;
+        text-align: center;
+        z-index: 1;
+    }
+
+    h2 {
+        color: #ff00ff;
+        letter-spacing: 3px;
+        font-size: 18px;
+    }
+
+    input {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        background: #05070f;
+        border: 1px solid #00ffe1;
+        color: #00ffe1;
+        font-family: "Courier New", monospace;
+        outline: none;
+    }
+
+    input:focus {
+        box-shadow: 0 0 10px #00ffe1;
+    }
+
+    button {
+        width: 95%;
+        padding: 10px;
+        margin-top: 10px;
+        background: #ff00ff;
+        border: none;
+        color: #000;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    button:hover {
+        box-shadow: 0 0 15px #ff00ff;
+        transform: scale(1.03);
+    }
+
+    .hint {
+        margin-top: 15px;
+        font-size: 12px;
+        opacity: 0.6;
+        color: #00ffe1;
+    }
+</style>
+
+<!-- 1940{hidden_truth} -->
+
+</head>
+<body>
+
+<div class="logo">Hexara</div>
+
+<div class="box">
+    <h2>Login for Challenges</h2>
+
+    <form>
+        <input type="text" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button type="submit">ENTER SYSTEM</button>
+    </form>
+
+    <div class="hint">
+        <!-- encrypted memory block -->
+    </div>
+</div>
+
+</body>
+</html>
